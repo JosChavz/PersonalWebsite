@@ -8,15 +8,48 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "devDependencies": {
+    "@jest/globals": "*",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/supertest": "*",
+    "@types/testing-library__jest-dom": "*",
+    "eslint-config-next": "*",
+    "eslint-config-typescript": "*",
+    "jest": "*",
+    "jest-environment-jsdom": "*",
+    "prettier": "^2.8.7",
+    "supertest": "*",
+    "ts-jest": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  },
   "dependencies": {
+    "@emotion/react": "*",
+    "@emotion/styled": "*",
+    "@mui/icons-material": "*",
+    "@mui/joy": "*",
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      ".eslintrc",
+      "next",
+      "next/core-web-vitals"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off"
+    }
   }
 }
